@@ -1,6 +1,7 @@
-if (typeof prompt === "function" && location.hostname.includes("github.io")) {
-    prompt = function(){ return null; };
+if (location.hostname.includes("github.io")) {
     alert = function(){};
+    prompt = function(){ return ""; };
+    confirm = function(){ return false; };
 }
 //Q-01
 let userInput = prompt("Enter your Value:");
